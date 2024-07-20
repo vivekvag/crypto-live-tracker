@@ -1,6 +1,8 @@
 # Crypto Live Tracker
 
-## Technical Implementation
+## Screenshot:
+![Alt text](https://github.com/vivekvag/crypto-live-tracker/blob/main/screenshot/landing_page.png)
+
 
 ### Backend
 
