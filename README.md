@@ -37,8 +37,7 @@ Make sure you have the following installed on your machine:
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/your-username/fomo-factory-backend-assessment.git
-   cd fomo-factory-backend-assessment
+   git git@github.com:vivekvag/crypto-live-tracker.git
    ```
 
 2. Install the dependencies:
@@ -64,10 +63,6 @@ The project should now be running at `http://localhost:10000`.
 ## Contributing
 
 If you'd like to contribute to this project, please fork the repository and use a feature branch. Pull requests are warmly welcome.
-
-## Contact
-
-If you have any questions or feedback, please reach out to me at [technicalperson9380@gmail.com].
 
 ## Credits
 
