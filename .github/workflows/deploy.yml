@@ -57,4 +57,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build # Update this path to the build output directory of your project
+          publish_dir: client/build
+          user_name: vivekvag281
+          user_email: vivekvag281@gmail.com
