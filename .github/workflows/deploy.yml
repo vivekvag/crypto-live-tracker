@@ -15,7 +15,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Compile code
+      - name: Build code
         run: |
           echo "Compiling the code..."
           echo "Compile complete."
@@ -46,7 +46,15 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Deploy application
+      - name: Build code
         run: |
-          echo "Deploying application..."
-          echo "Application successfully deployed."
+          echo "Building the site..."
+          # Replace the following command with the build command for your project
+          # For example, npm run build or yarn build
+          npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build # Update this path to the build output directory of your project
