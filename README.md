@@ -2,6 +2,8 @@
 
 ## Screenshot:
 ![Alt text](https://github.com/vivekvag/crypto-live-tracker/blob/main/screenshot/landing_page.png)
+![Alt text](https://github.com/vivekvag/crypto-live-tracker/blob/main/screenshot/modal.png)
+![Alt text](https://github.com/vivekvag/crypto-live-tracker/blob/main/screenshot/modal_v2.png)
 
 
 ### Backend
