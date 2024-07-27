@@ -2,8 +2,23 @@
   "name": "fomo_factory_mern",
   "version": "1.0.0",
   "main": "index.js",
+  "lint-staged": {
+    "*.{js, jsx,ts,tsx}": [
+      "eslint --quiet --fix"
+    ],
+    "*.{json,js,ts,jsx,tsx,html}": [
+      "prettier --write --ignore-unknown"
+    ]
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --fix --max-warnings=0",
+    "lint-fix": "eslint --quiet --fix",
+    "format": "prettier . --write",
+    "check-format": "prettier --check  \"./**/*.{js,jsx,ts,tsx,json,hbs}\"",
+    "check-lint": "eslint . --ext ts --ext tsx --ext js",
+    "prepare": "husky install",
+    "lint-staged": "lint-staged",
     "start": "node backend/dist/index.js",
     "build": "npm install && npm install --prefix client && npm run build --prefix client && npm install --prefix backend && npm run build --prefix backend"
   },
@@ -20,5 +35,11 @@
     "path": "^0.12.7",
     "socket.io": "^4.7.5",
     "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.2.2",
+    "prettier": "3.2.5"
   }
 }

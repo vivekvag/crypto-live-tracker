@@ -1,144 +1,146 @@
 /* Container for the entire component */
 .container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	background: linear-gradient(135deg, #282c34, #1c1e22);
-	color: #fff;
-	min-height: 100vh;
-	padding: 20px;
-	font-family: 'Roboto', sans-serif;
-	max-width: 100% !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #282c34, #1c1e22);
+  color: #fff;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+  max-width: 100% !important;
 }
 
 /* Header styling */
 .header {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .title {
-	font-size: 2rem;
-	font-weight: bold;
-	background: -webkit-linear-gradient(45deg, #ff6f61, #d77f91);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	margin-bottom: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+  background: -webkit-linear-gradient(45deg, #ff6f61, #d77f91);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
 }
 
 .button-change {
-	background-color: #ff6f61;
-	color: #fff;
-	border: none;
-	padding: 10px 20px;
-	border-radius: 5px;
-	cursor: pointer;
-	transition: background-color 0.3s;
+  background-color: #ff6f61;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .button-change:hover {
-	background-color: #d77f91;
+  background-color: #d77f91;
 }
 
 /* Table styling */
 .price-table {
-	width: 100%;
-	max-width: 800px;
-	border-collapse: separate;
-	border-spacing: 0 15px;
-	background-color: rgba(0, 0, 0, 0.8);
-	padding: 1rem;
-	border-radius: 8px;
+  width: 100%;
+  max-width: 800px;
+  border-collapse: separate;
+  border-spacing: 0 15px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1rem;
+  border-radius: 8px;
 }
 
 .price-table th,
 .price-table td {
-	text-align: center;
-	border: 1px solid rgba(255, 255, 255, 0.1);
-	padding: 10px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px;
 }
 
 .price-table th {
-	color: #ff6f61;
+  color: #ff6f61;
 }
 
 .price-table tr {
-	background-color: rgba(30, 30, 30, 0.7);
-	border-radius: 8px;
-	transition: background-color 0.5s ease, transform 0.5s ease;
+  background-color: rgba(30, 30, 30, 0.7);
+  border-radius: 8px;
+  transition:
+    background-color 0.5s ease,
+    transform 0.5s ease;
 }
 
 /* Highlight animation for the first row */
 .highlight {
-	background-color: rgba(97, 255, 118, 0.5);
-	transform: scale(1.05);
-	animation: highlightAnimation 1s ease forwards;
+  background-color: rgba(97, 255, 118, 0.5);
+  transform: scale(1.05);
+  animation: highlightAnimation 1s ease forwards;
 }
 
 @keyframes highlightAnimation {
-	0% {
-		background-color: rgba(255, 105, 97, 0.5);
-	}
-	100% {
-		background-color: rgba(30, 30, 30, 0.7);
-	}
+  0% {
+    background-color: rgba(255, 105, 97, 0.5);
+  }
+  100% {
+    background-color: rgba(30, 30, 30, 0.7);
+  }
 }
 
 /* Modal styling */
 .modal-overlay {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background: rgba(0, 0, 0, 0.6);
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal {
-	background: #fff;
-	color: #333;
-	padding: 20px;
-	border-radius: 8px;
-	width: 300px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-	position: relative;
+  background: #fff;
+  color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
 }
 
 .modal-title {
-	font-size: 1.5rem;
-	margin-bottom: 10px;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
 .modal-select {
-	width: 100%;
-	padding: 10px;
-	border-radius: 5px;
-	border: 1px solid #ddd;
-	margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
 }
 
 .modal-close {
-	background-color: #ff6f61;
-	color: #fff;
-	border: none;
-	padding: 10px;
-	border-radius: 5px;
-	cursor: pointer;
-	transition: background-color 0.3s;
+  background-color: #ff6f61;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .modal-close:hover {
-	background-color: #d77f91;
+  background-color: #d77f91;
 }
 
 /* Loading and error messages */
 .loading,
 .error {
-	font-size: 1.2rem;
-	margin-top: 10px;
+  font-size: 1.2rem;
+  margin-top: 10px;
 }
