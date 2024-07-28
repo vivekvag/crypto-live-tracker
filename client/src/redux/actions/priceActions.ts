@@ -7,7 +7,7 @@ import {
   fetchPricesFailure
 } from '../reducers/priceReducer';
 
-const api_url = 'https://crypto-live-tracker-flame.vercel.app/';
+const api_url = 'https://crypto-live-tracker-flame.vercel.app';
 
 export const fetchPrices = (symbol: string) => async (dispatch: AppDispatch) => {
   dispatch(fetchPricesRequest());

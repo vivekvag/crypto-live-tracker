@@ -62,7 +62,7 @@ Make sure you have the following installed on your machine:
    npm run start
    ```
 
-The project should now be running at `https://crypto-live-tracker-flame.vercel.app/`.
+The project should now be running at `https://crypto-live-tracker-flame.vercel.app`.
 
 ## Contributing
 
