@@ -4,7 +4,13 @@ import axios from 'axios';
 import './App.css';
 import io from 'socket.io-client';
 
-const socket = io('https://crypto-live-tracker-fawn.vercel.app');
+const baseURL =
+  process.env.REACT_APP_SOCKET_URL ||
+  (process.env.NODE_ENV === 'production'
+    ? `https://${process.env.VERCEL_URL}`
+    : 'http://localhost:10000');
+
+const socket = io(baseURL);
 
 const App: React.FC = () => {
   const [data, setData] = useState<any[]>([]); // Replace `any[]` with your data type
@@ -12,9 +18,7 @@ const App: React.FC = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(
-          'https://crypto-live-tracker-fawn.vercel.app/api/stocks/data/solana'
-        ); // Replace with your API endpoint
+        const response = await axios.get(`${baseURL}/api/stocks/data/solana`); // Replace with your API endpoint
         setData(response.data);
       } catch (error) {
         console.error('Error fetching data:', error);

@@ -7,7 +7,11 @@ import {
   fetchPricesFailure
 } from '../reducers/priceReducer';
 
-const api_url = 'https://crypto-live-tracker-fawn.vercel.app';
+const api_url =
+  process.env.REACT_APP_SOCKET_URL ||
+  (process.env.NODE_ENV === 'production'
+    ? `https://${process.env.VERCEL_URL}`
+    : 'http://localhost:10000');
 
 export const fetchPrices = (symbol: string) => async (dispatch: AppDispatch) => {
   dispatch(fetchPricesRequest());

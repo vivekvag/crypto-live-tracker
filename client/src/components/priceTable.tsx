@@ -11,7 +11,11 @@ import { RootState, AppDispatch } from '../redux/store';
 import io from 'socket.io-client';
 import './priceTable.css';
 
-const api_url = 'https://crypto-live-tracker-fawn.vercel.app';
+const api_url =
+  process.env.REACT_APP_SOCKET_URL ||
+  (process.env.NODE_ENV === 'production'
+    ? `https://${process.env.VERCEL_URL}`
+    : 'http://localhost:10000');
 
 const socket = io(api_url);
 
