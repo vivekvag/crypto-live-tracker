@@ -4,11 +4,7 @@ import axios from 'axios';
 import './App.css';
 import io from 'socket.io-client';
 
-const baseURL =
-  process.env.REACT_APP_SOCKET_URL ||
-  (process.env.NODE_ENV === 'production'
-    ? `https://${process.env.VERCEL_URL}`
-    : 'http://localhost:10000');
+const baseURL = `http://localhost:10000`;
 
 const socket = io(baseURL);
 
