@@ -11,7 +11,7 @@ import { RootState, AppDispatch } from '../redux/store';
 import io from 'socket.io-client';
 import './priceTable.css';
 
-const api_url = 'https://crypto-live-tracker-1va3jkbp5-vivek-guptas-projects-8162e112.vercel.app/';
+const api_url = 'https://crypto-live-tracker-flame.vercel.app/';
 
 const socket = io(api_url);
 

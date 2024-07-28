@@ -4,9 +4,7 @@ import axios from 'axios';
 import './App.css';
 import io from 'socket.io-client';
 
-const socket = io(
-  'https://crypto-live-tracker-1va3jkbp5-vivek-guptas-projects-8162e112.vercel.app/'
-);
+const socket = io('https://crypto-live-tracker-flame.vercel.app/');
 
 const App: React.FC = () => {
   const [data, setData] = useState<any[]>([]); // Replace `any[]` with your data type
@@ -15,7 +13,7 @@ const App: React.FC = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          'https://crypto-live-tracker-1va3jkbp5-vivek-guptas-projects-8162e112.vercel.app//api/stocks/data/solana'
+          'https://crypto-live-tracker-flame.vercel.app//api/stocks/data/solana'
         ); // Replace with your API endpoint
         setData(response.data);
       } catch (error) {
