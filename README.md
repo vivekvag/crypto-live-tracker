@@ -62,7 +62,7 @@ Make sure you have the following installed on your machine:
    npm run start
    ```
 
-The project should now be running at `http://localhost:10000`.
+The project should now be running at `https://crypto-live-tracker-1va3jkbp5-vivek-guptas-projects-8162e112.vercel.app/`.
 
 ## Contributing
 
