@@ -17,7 +17,7 @@
     "format": "prettier . --write",
     "check-format": "prettier --check  \"./**/*.{js,jsx,ts,tsx,json,hbs}\"",
     "check-lint": "eslint . --ext ts --ext tsx --ext js",
-    "prepare": "husky install",
+    "prepare": "npx husky install",
     "lint-staged": "lint-staged",
     "start": "node backend/dist/index.js",
     "build": "npm install && npm install --prefix client && npm run build --prefix client && npm install --prefix backend && npm run build --prefix backend",
